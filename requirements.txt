@@ -3,7 +3,5 @@
 
 fastapi
 uvicorn
-torch
 InstructorEmbedding
-tqdm
 sentence-transformers
