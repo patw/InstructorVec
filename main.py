@@ -6,6 +6,7 @@ import torch
 
 # Instructor model
 model = INSTRUCTOR('hkunlp/instructor-large', device='cpu')
+torch.backends.quantized.engine = 'qnnpack' 
 qmodel = torch.quantization.quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8)
 
 app = FastAPI(title="InstructVectorizer",

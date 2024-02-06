@@ -4,4 +4,4 @@
 fastapi
 uvicorn
 InstructorEmbedding
-sentence-transformers
+sentence-transformers=2.2.2
