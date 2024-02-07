@@ -8,10 +8,22 @@ A small vector API service for generating quantized instructor-large vectors.  T
 pip install -r requirements.txt
 ```
 
+or
+
+```
+pip3 install -r requirements.txt
+```
+
 ## Local Running
 
 ```
 uvicorn main:app --host 0.0.0.0 --port 3005
+```
+
+or using `python3`
+
+```
+python3 -m uvicorn main:app --host 0.0.0.0 --port 3005
 ```
 
 **Warning**: The first run will be VERY slow to load
